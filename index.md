@@ -57,6 +57,7 @@ report.output.format=html
        If we keep Types node value is blank then it will show all types of sonar reported issue.
   --&gt;
 	&lt;Types&gt;BUG,VULNERABILITY&lt;/Types&gt;
+
   &lt;!-- Resolutions node value contains comma separated resolutions of sonar reported issue. 
        OPEN indicates sonar reported issue whose implementation status is currently Open. 
        FALSE-POSITIVE indicates sonar reported issue's implementation status is currently marked as false positive by developer. 
@@ -66,8 +67,26 @@ report.output.format=html
        If we keep Resolutions node value is blank then it will show all resolutions sonar reported issue.
   --&gt;
 	&lt;Resolutions&gt;FALSE-POSITIVE,WONTFIX,FIXED,REMOVED&lt;/Resolutions&gt;
+
+  &lt;!-- 
+  	Severities node value contains comma separated severity.
+	BLOCKER indicates critical and blocker sonar reported issue.
+	MAJOR indicates high level sonar reported issue.
+	MINOR indicates low level sonar reported issue.
+  --&gt;
 	&lt;Severities&gt;BLOCKER&lt;/Severities&gt;
+
+  &lt;!-- 
+  	Projects node value contains project name mentioned in sonarqube. This value is dervied from maven project group and artifact id.
+  --&gt;
 	&lt;Projects&gt;&lt;/Projects&gt;
+
+  &lt;!-- 
+  	DateRange node value contains start date and end date to find out sonar reported issue with this range.
+	CreatedAfter format is YYYY-mm-dd example, - 2019-01-15
+	CreatedBefore format is YYYY-mm-dd example, - 2019-02-15
+	CreatedAfter date should be older than CreatedBefore
+  --&gt;
 	&lt;DateRange&gt;
 		&lt;CreatedAfter&gt;2019-02-03&lt;/CreatedAfter&gt;
 		&lt;CreatedBefore&gt;2019-02-15&lt;/CreatedBefore&gt;
