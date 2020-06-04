@@ -48,32 +48,32 @@ report.output.file=../conf/OutputXMLReport.html
 report.output.format=html
  ```
  - Edit **_FilterMapper.xml**_ file
- ```xml
-<!-- This Filter used to fetch requirement specific data from SonarQube server. -->
-<Filter>
-  <!-- Types node value contains comma separated issue type. 
+ <pre><code>
+&lt;!-- This Filter used to fetch requirement specific data from SonarQube server. --&gt;
+&lt;Filter&gt;
+  &lt;!-- Types node value contains comma separated issue type. 
        BUG indicate sonar reported bug. 
        VULNERABILITY indicate sonar reported vulnerabilities. 
        If we keep Types node value is blank then it will show all types of sonar reported issue.
-  -->
-	<Types>BUG,VULNERABILITY</Types>
-  <!-- Resolutions node value contains comma separated resolutions of sonar reported issue. 
+  --&gt;
+	&lt;Types&gt;BUG,VULNERABILITY&lt;/Types&gt;
+  &lt;!-- Resolutions node value contains comma separated resolutions of sonar reported issue. 
        OPEN indicates sonar reported issue whose implementation status is currently Open. 
        FALSE-POSITIVE indicates sonar reported issue's implementation status is currently marked as false positive by developer. 
        WONTFIX indicates sonar reported issue is as per designed and we can't able to fix this.
        FIXED indicates sonar reported issue is Fixed.
        CLOSED indicates sonar reported issue is Fixed and after sonar scann it gets validated and marked as Closed. 
        If we keep Resolutions node value is blank then it will show all resolutions sonar reported issue.
-  -->
-	<Resolutions>FALSE-POSITIVE,WONTFIX,FIXED,REMOVED</Resolutions>
-	<Severities>BLOCKER</Severities>
-	<Projects></Projects>
-	<DateRange>
-		<CreatedAfter>2019-02-03</CreatedAfter>
-		<CreatedBefore>2019-02-15</CreatedBefore>
-	</DateRange>
-</Filter>
-```
+  --&gt;
+	&lt;Resolutions&gt;FALSE-POSITIVE,WONTFIX,FIXED,REMOVED&lt;/Resolutions&gt;
+	&lt;Severities&gt;BLOCKER&lt;/Severities&gt;
+	&lt;Projects&gt;&lt;/Projects&gt;
+	&lt;DateRange&gt;
+		&lt;CreatedAfter&gt;2019-02-03&lt;/CreatedAfter&gt;
+		&lt;CreatedBefore&gt;2019-02-15&lt;/CreatedBefore&gt;
+	&lt;/DateRange&gt;
+&lt;/Filter&gt;
+</code></pre>
 
 - Edit **_Report.xsl**_ file
  ```markdown
