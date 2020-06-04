@@ -35,6 +35,52 @@ response from server it convert json response to XML format and apply XSLT to ge
 
   ![Overview](images/sonar-report-blockdiagram.png)
 
+### Tool configuration:
+ - Edit **_report-plugin.properties**_ file
+  ```markdown
+#sonar qube server URL.
+sonar.qube.server.url=http://SONAR_QUBE_SERVER_HOSTNAME:PORT/
+#report xml stylesheet template.
+report.xslt.template=../conf/Report.xsl
+#report output file name.
+report.output.file=../conf/OutputXMLReport.html
+#supported formats - html, xml, pdf
+report.output.format=html
+ ```
+ - Edit **_FilterMapper.xml**_ file
+ ```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Filter used to fetch requirement specific data from SonarQube server. -->
+<Filter>
+  <!-- Types node value contains comma separated issue type. 
+       BUG indicate sonar reported bug. 
+       VULNERABILITY indicate sonar reported vulnerabilities. 
+       If we keep Types node value is blank then it will show all types of sonar reported issue.
+  -->
+	<Types>BUG,VULNERABILITY</Types>
+  <!-- Resolutions node value contains comma separated resolutions of sonar reported issue. 
+       OPEN indicates sonar reported issue whose implementation status is currently Open. 
+       FALSE-POSITIVE indicates sonar reported issue's implementation status is currently marked as false positive by developer. 
+       WONTFIX indicates sonar reported issue is as per designed and we can't able to fix this.
+       FIXED indicates sonar reported issue is Fixed.
+       CLOSED indicates sonar reported issue is Fixed and after sonar scann it gets validated and marked as Closed. 
+       If we keep Resolutions node value is blank then it will show all resolutions sonar reported issue.
+  -->
+	<Resolutions>FALSE-POSITIVE,WONTFIX,FIXED,REMOVED</Resolutions>
+	<Severities>BLOCKER</Severities>
+	<Projects></Projects>
+	<DateRange>
+		<CreatedAfter>2019-02-03</CreatedAfter>
+		<CreatedBefore>2019-02-15</CreatedBefore>
+	</DateRange>
+</Filter>
+
+```
+ - Edit **_Report.xsl**_ file
+ ```markdown
+dfdg
+```
+
 ### Important Links:
 
 | Description | Link |
