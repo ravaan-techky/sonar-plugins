@@ -27,18 +27,13 @@ response from server it convert json response to XML format and apply XSLT to ge
 
 ### Benifits:
 
-- Module 1
-  - Benifit 1
-  - Benifit 2
-  - ....
-- Module 2
-  - Benifit 1
-  - Benifit 2
-  - ....
+- Reporting
+  - Download sonar scanning reports in the form of HTML / PDF which we can share with audience
+  - Keep track of sonar scanning issue as we have list of all open / resolved / closed issue.
 
 ### Architecture Overview:
 
-  ![Overview](images/sample_architect_blocks.png)
+  ![Overview](images/sonar-report-blockdiagram.png)
 
 ### Important Links:
 
