@@ -39,17 +39,15 @@ response from server it convert json response to XML format and apply XSLT to ge
 
 | Description | Link |
 | -------- | -------- |
-| Source Code | <span style="color: green;font-weight: bold;"><i class="fa fa-download"></i></span> |
-| Circle CI <If Available> | <span style="color: green;font-weight: bold;"><i class="fa fa-external-link"></i></span> |
-| Documentation | <span style="color: green;font-weight: bold;"><i class="fa fa-folder-open"></i></span> |
+| Source Code | <span style="color: green;font-weight: bold;"><a href="https://github.com/ravaan-techky/sonar-plugins/archive/master.zip"><i class="fa fa-download"></i></a></span> |
+| Circle CI <If Available> | Not Available |
+| Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/"><i class="fa fa-folder-open"></i></a></span> |
   
 ### Developer Information:
 
 | Description | Github Profile Link  | LinkedIn Profile Link | Email Address
 | -------- | -------- | -------- | -------- |
-| First_Name1 Last_Name1 | [<i class="fa fa-external-link"></i>](#) | [<i class="fa fa-external-link"></i>](#) | [abc@gmail.com](mailto:abc@gmail.com) |
-| First_Name2 Last_Name2 | [<i class="fa fa-external-link"></i>](#) | [<i class="fa fa-external-link"></i>](#) | [abc@gmail.com](mailto:abc@gmail.com) |
-| First_Name3 Last_Name3 | [<i class="fa fa-external-link"></i>](#) | [<i class="fa fa-external-link"></i>](#) | [abc@gmail.com](mailto:abc@gmail.com) |
+| Vaishali Patil | [<i class="fa fa-external-link"></i>](https://github.com/ravaan-techky/) | [<i class="fa fa-external-link"></i>](#) | [ravaan.techky@gmail.com](mailto:ravaan.techky@gmail.com) |
 
 <br/><br/>
 [<i class="fa fa-arrow-left"></i> **Back**](/documentation/)
