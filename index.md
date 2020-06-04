@@ -99,6 +99,7 @@ report.output.format=html
 This is XSLT file which use to generate HTML report. Same HTML format is used in PDF file.
 
 Sample XSLT template is available in ${project.directory}/conf/Report.xsl
+
 ```
 
 ### Important Links:
