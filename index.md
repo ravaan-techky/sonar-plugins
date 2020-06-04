@@ -48,7 +48,7 @@ report.output.file=../conf/OutputXMLReport.html
 report.output.format=html
  ```
  - Edit **_FilterMapper.xml**_ file
- ```xml
+ ```markdown
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This Filter used to fetch requirement specific data from SonarQube server. -->
 <Filter>
