@@ -1,4 +1,4 @@
-## Sonar Plugins
+## Sonar Report Plugins
 Sonar Plugins help to download sonar scanning reports in the form of HTML / PDF which we can share with audience.
 
 ### Overview:
@@ -24,6 +24,7 @@ response from server it convert json response to XML format and apply XSLT to ge
 | Core Java | Adopt Open JDK (11.0.7) |
 | Maven | Apache Maven 3.5.0 |
 | XSLT | 2.0 |
+| SonarQube Server | 7.7 Community Edition |
 
 ### Benifits:
 
