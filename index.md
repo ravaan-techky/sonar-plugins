@@ -41,7 +41,7 @@ response from server it convert json response to XML format and apply XSLT to ge
 | -------- | -------- |
 | Source Code | <span style="color: green;font-weight: bold;"><a href="https://github.com/ravaan-techky/sonar-plugins/archive/master.zip"><i class="fa fa-download"></i></a></span> |
 | Circle CI <If Available> | Not Available |
-| Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/"><i class="fa fa-folder-open"></i></a></span> |
+| Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/index"><i class="fa fa-folder-open"></i></a></span> |
   
 ### Developer Information:
 
