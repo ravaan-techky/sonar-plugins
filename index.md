@@ -73,9 +73,9 @@ report.output.format=html
 		<CreatedBefore>2019-02-15</CreatedBefore>
 	</DateRange>
 </Filter>
-
 ```
- - Edit **_Report.xsl**_ file
+
+- Edit **_Report.xsl**_ file
  ```markdown
 dfdg
 ```
