@@ -111,6 +111,14 @@ Sample XSLT template is available in ${project.directory}/conf/Report.xsl
 | Circle CI <If Available> | Not Available |
 | Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/index"><i class="fa fa-folder-open"></i></a></span> |
   
+### Sample Reports:
+| Report Type | Link |
+| -------- | -------- |
+| HTML | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/sample/html_report.html"><i class="fa fa-info"></i></a></span> |
+| PDF | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/sample/pdf_report.pdf"><i class="fa fa-info"></i></a></span> |
+| XML | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/sample/xml_report.xml"><i class="fa fa-info"></i></a></span> |
+
+
 ### Developer Information:
 
 | Description | Github Profile Link  | LinkedIn Profile Link | Email Address
