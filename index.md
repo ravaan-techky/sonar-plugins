@@ -96,7 +96,9 @@ report.output.format=html
 
 - Edit **_Report.xsl**_ file
  ```markdown
-dfdg
+This is XSLT file which use to generate HTML report. Same HTML format is used in PDF file.
+
+Sample XSLT template is available in ${project.directory}/conf/Report.xsl
 ```
 
 ### Important Links:
