@@ -112,12 +112,12 @@ Sample XSLT template is available in ${project.directory}/conf/Report.xsl
 | Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/index"><i class="fa fa-folder-open"></i></a></span> |
   
 ### Sample Reports:
+
 | Report Type | Link |
 | -------- | -------- |
 | HTML | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/report_sample/html_report.html"><i class="fa fa-info"></i></a></span> |
 | PDF | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/report_sample/pdf_report.pdf"><i class="fa fa-info"></i></a></span> |
 | XML | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/report_sample/xml_report.xml"><i class="fa fa-info"></i></a></span> |
-
 
 ### Developer Information:
 
