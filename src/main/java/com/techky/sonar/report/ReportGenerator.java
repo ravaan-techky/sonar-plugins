@@ -48,14 +48,34 @@ public class ReportGenerator {
 		FileUtility.writeData(xmlString, inputXMLFile, false);
 		final String reportFormat = PluginProperties.getProperty(ReportPluginConstant.REPORT_OUTPUT_FORMAT);
 		if (StringUtils.isNotBlank(reportFormat) && "PDF".equalsIgnoreCase(reportFormat)) {
-			final String pdfFileOutput = PluginProperties.getProperty(ReportPluginConstant.REPORT_OUTPUT_FILE);
-			final File outputReportFile = new File("./temp");
+			writePDFReport(inputXMLFile, xslFile);
+		} else {
+			final File outputReportFile = new File(
+					PluginProperties.getProperty(ReportPluginConstant.REPORT_OUTPUT_FILE));
 			XMLUtility.transformXML(inputXMLFile, xslFile, outputReportFile);
+		}
+	}
+
+	/**
+	 * Write PDF report.
+	 *
+	 * @param inputXMLFile the input XML file
+	 * @param xslFile      the xsl file
+	 * @throws ExportConfigurationException the export configuration exception
+	 * @throws DocumentException            the document exception
+	 * @throws IOException                  Signals that an I/O exception has
+	 *                                      occurred.
+	 */
+	private static void writePDFReport(final File inputXMLFile, final File xslFile)
+			throws ExportConfigurationException, DocumentException, IOException {
+		final String pdfFileOutput = PluginProperties.getProperty(ReportPluginConstant.REPORT_OUTPUT_FILE);
+		final File outputReportFile = new File("./temp");
+		XMLUtility.transformXML(inputXMLFile, xslFile, outputReportFile);
+		try (final BufferedReader bufferedReader = new BufferedReader(new FileReader(outputReportFile));) {
+			final StringBuilder htmlStringBuilder = new StringBuilder();
 			final Document document = new Document();
 			final PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(pdfFileOutput));
 			document.open();
-			final BufferedReader bufferedReader = new BufferedReader(new FileReader(outputReportFile));
-			final StringBuilder htmlStringBuilder = new StringBuilder();
 			while (true) {
 				final String str = bufferedReader.readLine();
 				if (str == null) {
@@ -67,10 +87,7 @@ public class ReportGenerator {
 			}
 			XMLWorkerHelper.getInstance().parseXHtml(writer, document, new StringReader(htmlStringBuilder.toString()));
 			document.close();
-		} else {
-			final File outputReportFile = new File(
-					PluginProperties.getProperty(ReportPluginConstant.REPORT_OUTPUT_FILE));
-			XMLUtility.transformXML(inputXMLFile, xslFile, outputReportFile);
+
 		}
 	}
 }
